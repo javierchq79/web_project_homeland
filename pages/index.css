@@ -25,7 +25,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
 }
 
 .nav__logo {
@@ -57,6 +56,8 @@
 .header__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
   margin-left: 80px;
   margin-bottom: 0;
 }
@@ -77,6 +78,7 @@
   letter-spacing: -1px;
   margin-top: 183px;
   padding: 0;
+  margin-left: 80px;
 }
 
 .header__title span {
@@ -101,11 +103,10 @@
 }
 
 .header__footer {
-  margin-top: auto;
-  width: 100%;
-  align-items: end;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
   box-sizing: border-box;
   font-weight: 500;
   font-size: 16px;
@@ -113,18 +114,19 @@
   color: #838383;
 }
 
-.header__footer_hours {
-  list-style: none;
-  padding: 0;
-  margin-left: 80px;
+.header__footer_hours,
+.header__footer_address {
   margin-bottom: 40px;
 }
 
-.header__footer_address {
-  margin-top: 0;
-  margin-right: 80px;
-  margin-bottom: 40px;
+.header__footer_hours {
+  margin-left: 80px;
 }
+
+.header__footer_address {
+  margin-right: 80px;
+}
+
 
 .header__link {
   color: #2f80ed;
@@ -183,6 +185,10 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto; /* centra horizontalmente el bloque */
+}
+
+.recipes__iframe {
+  border: none;
 }
 
 .recipes__video-caption {
