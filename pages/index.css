@@ -62,7 +62,7 @@
   margin-bottom: 0;
 }
 
-.header__title_span-accent {
+.header__span-accent {
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
   font-size: 58px;
@@ -105,17 +105,23 @@
 .header__footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  box-sizing: border-box;
+  margin: auto 0 40px;
+}
+
+.header__paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
+  margin: 0;
 }
 
 .header__footer-hours,
 .header__footer-address {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
 }
 
