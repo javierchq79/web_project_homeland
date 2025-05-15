@@ -105,7 +105,7 @@
 .header__footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
   box-sizing: border-box;
   font-weight: 500;
@@ -114,28 +114,22 @@
   color: #838383;
 }
 
-.header__footer_hours,
-.header__footer_address {
+.header__footer-hours,
+.header__footer-address {
   margin-bottom: 40px;
 }
 
-.header__footer_hours {
+.header__footer-hours {
   margin-left: 80px;
 }
 
-.header__footer_address {
+.header__footer-address {
   margin-right: 80px;
 }
-
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
-}
-
-.header__address {
-  margin: 0;
-  color: #838383;
 }
 
 .recipes {
