@@ -1,8 +1,18 @@
 .page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+width: 100%;
+max-width: 1600px;
+margin: 0 auto;
+line-height: 20px;
+background-color: #2a2c2f;
+color:#ffffff;
+}
+
+
+/* CSS */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
 }

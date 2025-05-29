@@ -1,92 +1,46 @@
-
-.header {
-  background-color: #FFFFFF;
-  background-image: url("../images/background_header.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/* ===== HEADER ===== */
+.gallery-header {
+  text-align: center;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
-  position: relative;
-  box-sizing: border-box;
 }
 
-.header__span-accent {
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: italic;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
+.gallery-header__logo {
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  align-self: center; /* evita que el flex lo estire */
 }
 
-.header__title {
-  max-width: 709px;
-  font-weight: 500;
-  font-size: 58px;
-  line-height: 72px;
-  letter-spacing: -1px;
-  margin-top: 183px;
-  padding: 0;
-  margin-left: 80px;
+
+.gallery-header__title {
+  width: 700px;
+  height: 200px;
+  font-size: 96px;
+  line-height: 100px;
+  margin-bottom: 10px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 160px;
 }
 
-.header__title span {
-  display: block;
+.gallery-header__description {
+  width: 720px;
+  height: 72px;
+  font-size: 30px;
+  line-height: 36px;
+  justify-content: center;
+  margin: 100px auto 50px auto; /* Centrado horizontalmente, con más espacio arriba que abajo */
 }
 
-.header__description {
-  max-width: 683px;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 80px;
-  margin-top: 28px;
-  padding: 0;
+.gallery-header__image {
+  margin-top: 136px;
+  max-width: 984px;
+  max-height: 615px;
+  margin: 100px auto 50px auto; /* Centrado horizontalmente, con más espacio arriba que abajo */
 }
 
-.header__image {
-  width: 646px;
-  height: 568px;
-  position: absolute;
-  top: 124px;
-  right: 5px;
-}
-
-.header__footer {
-  display: flex;
-  justify-content: space-between;
-  margin: auto 0 40px;
-}
-
-.header__paragraph {
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #838383;
-  margin: 0;
-}
-
-.header__footer-hours,
-.header__footer-address {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.header__footer-hours {
-  margin-left: 80px;
-}
-
-.header__footer-address {
-  margin-right: 80px;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
