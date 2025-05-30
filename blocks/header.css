@@ -1,12 +1,12 @@
 /* ===== HEADER ===== */
-.gallery-header {
+.header-gallery {
   text-align: center;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
 }
 
-.gallery-header__logo {
+.header-gallery__logo {
   margin-bottom: 20px;
   width: auto;
   height: auto;
@@ -17,7 +17,7 @@
 }
 
 
-.gallery-header__title {
+.header-gallery__title {
   width: 700px;
   height: 200px;
   font-size: 96px;
@@ -28,7 +28,7 @@
   margin-top: 160px;
 }
 
-.gallery-header__description {
+.header-gallery__description {
   width: 720px;
   height: 72px;
   font-size: 30px;
@@ -37,7 +37,7 @@
   margin: 100px auto 50px auto; /* Centrado horizontalmente, con más espacio arriba que abajo */
 }
 
-.gallery-header__image {
+.header-gallery__image {
   margin-top: 136px;
   max-width: 984px;
   max-height: 615px;
