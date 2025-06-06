@@ -100,6 +100,7 @@
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 48px;
 }
 
 .main__ciudades__foto img:hover {
@@ -112,20 +113,23 @@
   color: #FFFFFF;
 }
 
-.main__ciudades__boton button {
+.main__ciudades__boton a {
   background: linear-gradient(to right, #0278FE, #003A7B);
   color: white;
   border: none;
-  margin-top: 48px;
+  text-decoration: none;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  width: 50%;
 }
 
-.main__ciudades__boton button:hover {
+
+
+.main__ciudades__boton:hover {
   transform: scale(1.05);
   opacity: 0.25;
 }
