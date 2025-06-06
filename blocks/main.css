@@ -78,7 +78,7 @@
   height: 100%; /* Asegúrate que el contenedor tenga altura */
 }
 
-.main-artistas__titulo {
+.main-ciudades__titulo-artistas {
   font-size: 12px;
   color: #AAAAAA;
   font-weight: bold;

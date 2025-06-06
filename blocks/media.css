@@ -4,7 +4,6 @@
 @media (max-width: 768px) {
   .main-gallery {
     margin: 0 5%;
-    padding: 20px 10px;
   }
 
   .main-gallery__heading {
@@ -45,7 +44,6 @@
 @media (max-width: 320px) {
   .main-gallery {
     margin: 0 2%;
-    padding: 10px 5px;
   }
 
   .main-gallery__heading {
@@ -87,55 +85,56 @@
 
 @media screen and (max-width: 767px) {
   /* Galería de fotos: 2 columnas */
-  .main__foto-grid__container {
+  .main-foto-grid__container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 12px;
   }
 
   /* Grid de ciudades: apilado */
-  .main__ciudades__grid {
+  .main-ciudades__grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 32px;
   }
 
-  .main__ciudades__ciudad {
+  .main-ciudades__ciudad {
     font-size: 4vw; /* Más grande y fluido para móviles */
     text-align: center;
   }
 
-  .main__ciudades__foto img {
-    height: auto;
-    max-width: 288px;
-  }
+.main-ciudades__foto img {
+  height: auto;
+  max-width: 100%; /* para que no exceda el contenedor */
+  width: auto; /* o 100% si quieres */
+}
 
-  .main__ciudades__boton button {
+
+  .main-ciudades__boton button {
     width: 90%;
     font-size: 1rem;
   }
 
-  .main__ciudades__descripcion {
+  .main-ciudades__descripcion {
     font-size: 4vw;
     line-height: 1.5;
   }
 
-  .main__artistas__texto {
+  .main-artistas__texto {
     font-size: 4vw;
   }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Galería de fotos: 3 columnas */
-  .main__foto-grid__container {
+  .main-foto-grid__container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 16px;
   }
 
   /* Grid de ciudades: 2 columnas pero más estrechas */
-.main__ciudades__grid {
+.main-ciudades__grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
   grid-template-rows: auto auto auto; /* 3 filas */
@@ -144,15 +143,15 @@
   margin: 0 auto; /* centrar horizontalmente */
 }
 
-  .main__ciudades__ciudad {
+  .main-ciudades__ciudad {
     font-size: 3.5vw;
   }
 
-  .main__artistas__texto {
+  .main-artistas__texto {
     font-size: 17px;
   }
 
-  .main__ciudades__descripcion {
+  .main-ciudades__descripcion {
     font-size: 17px;
   }
 }
