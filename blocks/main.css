@@ -33,7 +33,7 @@
 }
 
 /* SECCIÓN: Foto Grid Principal */
-.main__foto-grid__container {
+.main-foto-grid__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
   grid-template-rows: repeat(2, 1fr);    /* 2 filas iguales */
@@ -42,7 +42,7 @@
   margin-bottom: 40px;
 }
 
-.main__foto-grid__item {
+.main-foto-grid__item {
   height: 100%;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
 
 /* SECCIÓN: Ciudades */
 
-.main__ciudades__grid {
+.main-ciudades__grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
   grid-template-rows: auto auto auto; /* 3 filas */
@@ -64,56 +64,56 @@
 }
 
 
-.main__ciudades__ciudad {
+.main-ciudades__ciudad {
   font-size: 2.5vw;
   font-weight: bold;
   line-height: 1.1;
   text-align: left;
 }
 
-.main__ciudades__artistas-nombre {
+.main-ciudades__artistas-nombre {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Empuja el contenido hacia abajo */
   height: 100%; /* Asegúrate que el contenedor tenga altura */
 }
 
-.main__artistas__titulo {
+.main-artistas__titulo {
   font-size: 12px;
   color: #AAAAAA;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.main__artistas__texto {
-  font-size: 18;
-  line-height: auto;
+.main-artistas__texto {
+  font-size: 18px;
+  line-height: 19px;
   color: #FFFFFF;
 }
 
-.main__artistas__texto span {
+.main-artistas__texto span {
   display: block;
 }
 
 
-.main__ciudades__foto img {
+.main-ciudades__foto img {
   width: 100%;
   height: auto;
   display: block;
   margin-bottom: 48px;
 }
 
-.main__ciudades__foto img:hover {
+.main-ciudades__foto img:hover {
   opacity: 0.75;
 }
 
-.main__ciudades__descripcion {
-  font-size: 18;
+.main-ciudades__descripcion {
+  font-size: 18px;
   line-height: 1.6;
   color: #FFFFFF;
 }
 
-.main__ciudades__boton a {
+.main-ciudades__boton a {
   background: linear-gradient(to right, #0278FE, #003A7B);
   color: white;
   border: none;
@@ -129,7 +129,7 @@
 
 
 
-.main__ciudades__boton:hover {
+.main-ciudades__boton:hover {
   transform: scale(1.05);
   opacity: 0.25;
 }
