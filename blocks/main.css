@@ -114,7 +114,7 @@ main-ciudades__nombres span {
 }
 
 .main-ciudades__boton a {
-  background: linear-gradient(to right, #0278FE, #003A7B);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   color: white;
   border: none;
   text-decoration: none;
