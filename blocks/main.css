@@ -129,9 +129,9 @@ main-ciudades__nombres span {
 
 
 
-.main-ciudades__boton:hover {
+.main-ciudades__boton a:hover {
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
   transform: scale(1.05);
-  opacity: 0.25;
 }
 
 
