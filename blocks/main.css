@@ -31,3 +31,104 @@
   font-size: 16px;
   line-height: 163%;
 }
+
+/* SECCIÓN: Foto Grid Principal */
+.main__foto-grid__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  grid-template-rows: repeat(2, 1fr);    /* 2 filas iguales */
+  gap: 16px;
+  margin-top: 118px;
+  margin-bottom: 40px;
+}
+
+.main__foto-grid__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fin de SECCIÓN: Foto Grid Principal */
+
+
+/* SECCIÓN: Ciudades */
+
+.main__ciudades__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  grid-template-rows: auto auto auto; /* 3 filas */
+  gap: 50px;
+  width: 100%;
+  margin: 0 auto; /* centrar horizontalmente */
+}
+
+
+.main__ciudades__ciudad {
+  font-size: 2.5vw;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.main__ciudades__artistas-nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Empuja el contenido hacia abajo */
+  height: 100%; /* Asegúrate que el contenedor tenga altura */
+}
+
+.main__artistas__titulo {
+  font-size: 12px;
+  color: #AAAAAA;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.main__artistas__texto {
+  font-size: 18;
+  line-height: auto;
+  color: #FFFFFF;
+}
+
+.main__artistas__texto span {
+  display: block;
+}
+
+
+.main__ciudades__foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main__ciudades__foto img:hover {
+  opacity: 0.75;
+}
+
+.main__ciudades__descripcion {
+  font-size: 18;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.main__ciudades__boton button {
+  background: linear-gradient(to right, #0278FE, #003A7B);
+  color: white;
+  border: none;
+  margin-top: 48px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main__ciudades__boton button:hover {
+  transform: scale(1.05);
+  opacity: 0.25;
+}
+
+
+/* Fin de SECCIÓN: Ciudades */

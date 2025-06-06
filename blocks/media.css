@@ -59,7 +59,7 @@
   }
 
   .main-gallery__text {
-    font-size: 10px;
+    font-size: 14px;
   }
 
 
@@ -69,8 +69,8 @@
 
   .header-gallery__title,
   .header-gallery__description {
-    font-size: 26px;
-    line-height: 29px;
+    font-size: 22px;
+    line-height: 24px;
     margin-top: 5px;
     width: 100%;
     max-height: 75px;
@@ -83,3 +83,79 @@
     display: block;
   }
 }
+/* Media Queries Parte 2 */
+
+@media screen and (max-width: 767px) {
+  /* Galería de fotos: 2 columnas */
+  .main__foto-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+  }
+
+  /* Grid de ciudades: apilado */
+  .main__ciudades__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 32px;
+  }
+
+  .main__ciudades__ciudad {
+    font-size: 4vw; /* Más grande y fluido para móviles */
+    text-align: center;
+  }
+
+  .main__ciudades__foto img {
+    height: auto;
+    max-width: 288px;
+  }
+
+  .main__ciudades__boton button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .main__ciudades__descripcion {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .main__artistas__texto {
+    font-size: 4vw;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Galería de fotos: 3 columnas */
+  .main__foto-grid__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  /* Grid de ciudades: 2 columnas pero más estrechas */
+.main__ciudades__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  grid-template-rows: auto auto auto; /* 3 filas */
+  gap: 28px;
+  width: 100%;
+  margin: 0 auto; /* centrar horizontalmente */
+}
+
+  .main__ciudades__ciudad {
+    font-size: 3.5vw;
+  }
+
+  .main__artistas__texto {
+    font-size: 17px;
+  }
+
+  .main__ciudades__descripcion {
+    font-size: 17px;
+  }
+}
+
+
+
